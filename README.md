@@ -39,6 +39,19 @@ MCSC holds dramatically higher and longer activity than baselines at similar sca
 
 - **hardware/** – dxdiag proof of test machine (2014 laptop). visible in videos.
 
+## Videos – Watch directly (YouTube – Unlisted)
+   Click to play CMD runs (no download needed):
+- [ run 12 test N 400 000 000 M1 ](https://youtu.be/iqeDBOdlS_I)  
+-  [run 11 test Kuramoto baseline](https://youtu.be/RjEwmMzOObA)  
+- [run 10 test Kuramoto baseline](https://youtu.be/RB1FA--ohO8)  
+- [run 9 testGame of Life](https://youtu.be/eT3qnozqGfk)  
+- [run 8 testGame of Life](https://youtu.be/NRd6IGvWJWY)  
+- [run 6 testGame of Life](https://youtu.be/3jUFFBmHFGw)  
+- [run 5 testGame of Life](https://youtu.be/9m9StUKo0Uc)  
+- [run 4 Hopfield Network test](https://youtu.be/wvNG6z6bEvg)  
+- [run 3 Ising Baseline test](https://youtu.be/Wj-7N8UThRU)  
+- [run 2 Ising Baseline test](https://youtu.be/gkRymuy1-uo)
+
 ## Why This Matters
 Most models lose activity quickly at large scales (noise/decay kills everything).  
 MCSC holds 90–99%+ far longer – **4–10× better stability** than baselines.  
