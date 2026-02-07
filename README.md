@@ -1,7 +1,9 @@
 
 
 ## Videos – Watch directly (YouTube – Unlisted)
-   Click to play CMD runs (no download needed):
+for better quality download from video folder !
+
+Click to play CMD runs (no download needed):
 - [ run 12 test N 400 000 000 M ](https://youtu.be/iqeDBOdlS_I)  
 -  [run 11 test Kuramoto baseline](https://youtu.be/RjEwmMzOObA)  
 - [run 10 test Kuramoto baseline](https://youtu.be/RB1FA--ohO8)  
