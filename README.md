@@ -14,7 +14,7 @@ Click to play CMD runs (no download needed):
 - [run 4 Hopfield Network test](https://youtu.be/wvNG6z6bEvg)  
 - [run 3 Ising Baseline test](https://youtu.be/Wj-7N8UThRU)  
 - [run 2 Ising Baseline test](https://youtu.be/gkRymuy1-uo)
-
+- [run 17 test N 10 000 000 Emergent Coherence graphic](https://youtu.be/DY8HOc7T2Vw)
  
  MCSC – Massively Coherent Systems Computing
 
