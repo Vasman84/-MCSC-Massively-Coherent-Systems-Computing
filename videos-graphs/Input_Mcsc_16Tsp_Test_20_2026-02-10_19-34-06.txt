@@ -1,0 +1,17 @@
+Running Input Mcsc 16Tsp Test with N = 20, ticks = 500
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:           20 active (100.00%)
+Tick  101:           20 active (100.00%)
+Tick  151:           20 active (100.00%)
+Tick  201:           17 active ( 85.00%)
+Tick  251:           14 active ( 70.00%)
+Tick  301:           11 active ( 55.00%)
+Tick  351:           11 active ( 55.00%)
+Tick  401:            9 active ( 45.00%)
+Tick  451:           13 active ( 65.00%)
+Tick  500:           11 active ( 55.00%)
+
+Execution finished in 0.03 seconds
+Final active (tick 500): 11 (55.00%)
+Plot saved: output\Input_Mcsc_16Tsp_Test_20_2026-02-10_19-34-06.png

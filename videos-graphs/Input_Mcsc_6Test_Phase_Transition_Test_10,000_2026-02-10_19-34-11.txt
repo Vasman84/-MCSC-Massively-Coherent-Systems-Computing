@@ -1,0 +1,17 @@
+Running Input Mcsc 6Test Phase Transition Test with N = 10,000, ticks = 500
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:        9,988 active ( 99.88%)
+Tick  101:        9,807 active ( 98.07%)
+Tick  151:        9,313 active ( 93.13%)
+Tick  201:        7,534 active ( 75.34%)
+Tick  251:        7,921 active ( 79.21%)
+Tick  301:        7,537 active ( 75.37%)
+Tick  351:        6,339 active ( 63.39%)
+Tick  401:        4,330 active ( 43.30%)
+Tick  451:        5,522 active ( 55.22%)
+Tick  500:        5,493 active ( 54.93%)
+
+Execution finished in 0.45 seconds
+Final active (tick 500): 5,493 (54.93%)
+Plot saved: output\Input_Mcsc_6Test_Phase_Transition_Test_10,000_2026-02-10_19-34-11.png

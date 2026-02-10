@@ -1,0 +1,18 @@
+Running Input Mcsc 9Test Smart Traffic Light Coordination with N = 500, ticks = 500
+Perturb at tick 150 with strength 0.2
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:          500 active (100.00%)
+Tick  101:          486 active ( 97.20%)
+Tick  151:          466 active ( 93.20%)
+Tick  201:          388 active ( 77.60%)
+Tick  251:          405 active ( 81.00%)
+Tick  301:          374 active ( 74.80%)
+Tick  351:          292 active ( 58.40%)
+Tick  401:          195 active ( 39.00%)
+Tick  451:          269 active ( 53.80%)
+Tick  500:          243 active ( 48.60%)
+
+Execution finished in 0.06 seconds
+Final active (tick 500): 243 (48.60%)
+Plot saved: output\Input_Mcsc_9Test_Smart_Traffic_Light_Coordination_500_2026-02-10_19-34-14.png

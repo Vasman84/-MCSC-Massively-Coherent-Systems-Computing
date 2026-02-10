@@ -1,0 +1,17 @@
+Running Input Mcsc 2Test Xeb Fidelity Cross Entropy Benchmarking with N = 105, ticks = 500
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:          105 active (100.00%)
+Tick  101:          104 active ( 99.05%)
+Tick  151:          102 active ( 97.14%)
+Tick  201:           88 active ( 83.81%)
+Tick  251:           88 active ( 83.81%)
+Tick  301:           86 active ( 81.90%)
+Tick  351:           78 active ( 74.29%)
+Tick  401:           64 active ( 60.95%)
+Tick  451:           72 active ( 68.57%)
+Tick  500:           59 active ( 56.19%)
+
+Execution finished in 0.03 seconds
+Final active (tick 500): 59 (56.19%)
+Plot saved: output\Input_Mcsc_2Test_Xeb_Fidelity_Cross_Entropy_Benchmarking_105_2026-02-10_19-34-08.png

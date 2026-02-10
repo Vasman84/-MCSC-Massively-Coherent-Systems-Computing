@@ -1,0 +1,17 @@
+Running Input Mcsc 14Risk Propagation with N = 500, ticks = 500
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:          500 active (100.00%)
+Tick  101:          494 active ( 98.80%)
+Tick  151:          459 active ( 91.80%)
+Tick  201:          359 active ( 71.80%)
+Tick  251:          373 active ( 74.60%)
+Tick  301:          359 active ( 71.80%)
+Tick  351:          308 active ( 61.60%)
+Tick  401:          207 active ( 41.40%)
+Tick  451:          275 active ( 55.00%)
+Tick  500:          293 active ( 58.60%)
+
+Execution finished in 1.55 seconds
+Final active (tick 500): 293 (58.60%)
+Plot saved: output\Input_Mcsc_14Risk_Propagation_500_2026-02-10_19-34-04.png

@@ -1,0 +1,18 @@
+Running Input Mcsc 11Brain Oscillations with N = 1,000, ticks = 500
+Perturb at tick 150 with strength 0.2
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:        1,000 active (100.00%)
+Tick  101:          998 active ( 99.80%)
+Tick  151:          966 active ( 96.60%)
+Tick  201:          745 active ( 74.50%)
+Tick  251:          832 active ( 83.20%)
+Tick  301:          812 active ( 81.20%)
+Tick  351:          697 active ( 69.70%)
+Tick  401:          470 active ( 47.00%)
+Tick  451:          572 active ( 57.20%)
+Tick  500:          520 active ( 52.00%)
+
+Execution finished in 0.10 seconds
+Final active (tick 500): 520 (52.00%)
+Plot saved: output\Input_Mcsc_11Brain_Oscillations_1,000_2026-02-10_19-33-58.png

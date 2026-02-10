@@ -1,0 +1,17 @@
+Running Input Mcsc 1Test Rcs Hamming Weight Основен Rcs + Hamming Weight with N = 105, ticks = 500
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:          105 active (100.00%)
+Tick  101:          102 active ( 97.14%)
+Tick  151:           96 active ( 91.43%)
+Tick  201:           77 active ( 73.33%)
+Tick  251:           86 active ( 81.90%)
+Tick  301:           80 active ( 76.19%)
+Tick  351:           80 active ( 76.19%)
+Tick  401:           43 active ( 40.95%)
+Tick  451:           68 active ( 64.76%)
+Tick  500:           72 active ( 68.57%)
+
+Execution finished in 0.04 seconds
+Final active (tick 500): 72 (68.57%)
+Plot saved: output\Input_Mcsc_1Test_Rcs_Hamming_Weight_Основен_Rcs_+_Hamming_Weight_105_2026-02-10_19-34-07.png

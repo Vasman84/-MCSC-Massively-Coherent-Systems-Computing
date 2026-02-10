@@ -1,0 +1,17 @@
+Running Input Mcsc 8Test Risk Propagation with N = 500, ticks = 500
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:          500 active (100.00%)
+Tick  101:          494 active ( 98.80%)
+Tick  151:          461 active ( 92.20%)
+Tick  201:          382 active ( 76.40%)
+Tick  251:          408 active ( 81.60%)
+Tick  301:          392 active ( 78.40%)
+Tick  351:          313 active ( 62.60%)
+Tick  401:          209 active ( 41.80%)
+Tick  451:          270 active ( 54.00%)
+Tick  500:          268 active ( 53.60%)
+
+Execution finished in 0.07 seconds
+Final active (tick 500): 268 (53.60%)
+Plot saved: output\Input_Mcsc_8Test_Risk_Propagation_500_2026-02-10_19-34-13.png

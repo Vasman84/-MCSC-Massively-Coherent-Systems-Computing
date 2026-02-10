@@ -1,0 +1,18 @@
+Running Input Mcsc 15Swarm Robotics with N = 500, ticks = 500
+Perturb at tick 150 with strength 0.2
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:          500 active (100.00%)
+Tick  101:          497 active ( 99.40%)
+Tick  151:          484 active ( 96.80%)
+Tick  201:          387 active ( 77.40%)
+Tick  251:          415 active ( 83.00%)
+Tick  301:          423 active ( 84.60%)
+Tick  351:          343 active ( 68.60%)
+Tick  401:          226 active ( 45.20%)
+Tick  451:          307 active ( 61.40%)
+Tick  500:          280 active ( 56.00%)
+
+Execution finished in 0.07 seconds
+Final active (tick 500): 280 (56.00%)
+Plot saved: output\Input_Mcsc_15Swarm_Robotics_500_2026-02-10_19-34-05.png

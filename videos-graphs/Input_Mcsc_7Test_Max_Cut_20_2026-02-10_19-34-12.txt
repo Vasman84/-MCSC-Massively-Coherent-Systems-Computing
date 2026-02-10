@@ -1,0 +1,17 @@
+Running Input Mcsc 7Test Max Cut with N = 20, ticks = 500
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:           20 active (100.00%)
+Tick  101:           20 active (100.00%)
+Tick  151:           20 active (100.00%)
+Tick  201:           16 active ( 80.00%)
+Tick  251:           18 active ( 90.00%)
+Tick  301:           16 active ( 80.00%)
+Tick  351:           18 active ( 90.00%)
+Tick  401:           16 active ( 80.00%)
+Tick  451:           14 active ( 70.00%)
+Tick  500:           14 active ( 70.00%)
+
+Execution finished in 0.03 seconds
+Final active (tick 500): 14 (70.00%)
+Plot saved: output\Input_Mcsc_7Test_Max_Cut_20_2026-02-10_19-34-12.png

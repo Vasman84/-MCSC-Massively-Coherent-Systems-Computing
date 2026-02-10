@@ -1,0 +1,17 @@
+Running Input Mcsc 3Test Heavy Output Generation with N = 105, ticks = 500
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:          105 active (100.00%)
+Tick  101:          103 active ( 98.10%)
+Tick  151:           95 active ( 90.48%)
+Tick  201:           76 active ( 72.38%)
+Tick  251:           78 active ( 74.29%)
+Tick  301:           77 active ( 73.33%)
+Tick  351:           56 active ( 53.33%)
+Tick  401:           38 active ( 36.19%)
+Tick  451:           50 active ( 47.62%)
+Tick  500:           47 active ( 44.76%)
+
+Execution finished in 0.03 seconds
+Final active (tick 500): 47 (44.76%)
+Plot saved: output\Input_Mcsc_3Test_Heavy_Output_Generation_105_2026-02-10_19-34-08.png

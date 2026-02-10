@@ -1,0 +1,18 @@
+Running Input Mcsc 13Power Grid with N = 1,000, ticks = 500
+Perturb at tick 100 with strength 0.15
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:        1,000 active (100.00%)
+Tick  101:          986 active ( 98.60%)
+Tick  151:          948 active ( 94.80%)
+Tick  201:          736 active ( 73.60%)
+Tick  251:          801 active ( 80.10%)
+Tick  301:          729 active ( 72.90%)
+Tick  351:          654 active ( 65.40%)
+Tick  401:          472 active ( 47.20%)
+Tick  451:          531 active ( 53.10%)
+Tick  500:          557 active ( 55.70%)
+
+Execution finished in 0.13 seconds
+Final active (tick 500): 557 (55.70%)
+Plot saved: output\Input_Mcsc_13Power_Grid_1,000_2026-02-10_19-34-01.png

@@ -1,0 +1,18 @@
+Running Input Mcsc 4Test Power Grid Synchronization with N = 1,000, ticks = 500
+Perturb at tick 100 with strength 0.15
+----------------------------------------------------------------------
+Tick    1:            0 active (  0.00%)
+Tick   51:        1,000 active (100.00%)
+Tick  101:          997 active ( 99.70%)
+Tick  151:          950 active ( 95.00%)
+Tick  201:          725 active ( 72.50%)
+Tick  251:          756 active ( 75.60%)
+Tick  301:          739 active ( 73.90%)
+Tick  351:          619 active ( 61.90%)
+Tick  401:          425 active ( 42.50%)
+Tick  451:          550 active ( 55.00%)
+Tick  500:          562 active ( 56.20%)
+
+Execution finished in 0.09 seconds
+Final active (tick 500): 562 (56.20%)
+Plot saved: output\Input_Mcsc_4Test_Power_Grid_Synchronization_1,000_2026-02-10_19-34-09.png
