@@ -1,9 +1,10 @@
 
 
 ## Videos – Watch directly (YouTube – Unlisted)
-for better quality download from video folder !
+for better quality download from video folder ! !!! 
 
 Click to play CMD runs (no download needed):
+ - [run_18test_input _1-16](https://youtu.be/o9JUCD8xEOg)
 - [ run 12 test N 400 000 000 M ](https://youtu.be/iqeDBOdlS_I)  
 -  [run 11 test Kuramoto baseline](https://youtu.be/RjEwmMzOObA)  
 - [run 10 test Kuramoto baseline](https://youtu.be/RB1FA--ohO8)  
@@ -15,7 +16,7 @@ Click to play CMD runs (no download needed):
 - [run 3 Ising Baseline test](https://youtu.be/Wj-7N8UThRU)  
 - [run 2 Ising Baseline test](https://youtu.be/gkRymuy1-uo)
 - [run 17 test N 10 000 000 Emergent Coherence graphic](https://youtu.be/DY8HOc7T2Vw)
- - [run_18test_input _1-16](https://youtu.be/bOaTG3Dc-GA)
+ 
  MCSC – Massively Coherent Systems Computing
 
 Prototype demonstrating **emergent coherence** in massive networks of coherent transistors.
