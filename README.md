@@ -15,7 +15,7 @@ Click to play CMD runs (no download needed):
 - [run 3 Ising Baseline test](https://youtu.be/Wj-7N8UThRU)  
 - [run 2 Ising Baseline test](https://youtu.be/gkRymuy1-uo)
 - [run 17 test N 10 000 000 Emergent Coherence graphic](https://youtu.be/DY8HOc7T2Vw)
- 
+ - [run_18test_input _1-16](https://youtu.be/bOaTG3Dc-GA)
  MCSC – Massively Coherent Systems Computing
 
 Prototype demonstrating **emergent coherence** in massive networks of coherent transistors.
