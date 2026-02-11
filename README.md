@@ -1,9 +1,10 @@
 
 
 ## Videos – Watch directly (YouTube – Unlisted)
-for better quality download from video folder !
+for better quality download from video folder ! !!! 
 
 Click to play CMD runs (no download needed):
+ - [run_18test_input _1-16](https://youtu.be/o9JUCD8xEOg)
 - [ run 12 test N 400 000 000 M ](https://youtu.be/iqeDBOdlS_I)  
 -  [run 11 test Kuramoto baseline](https://youtu.be/RjEwmMzOObA)  
 - [run 10 test Kuramoto baseline](https://youtu.be/RB1FA--ohO8)  
@@ -15,8 +16,39 @@ Click to play CMD runs (no download needed):
 - [run 3 Ising Baseline test](https://youtu.be/Wj-7N8UThRU)  
 - [run 2 Ising Baseline test](https://youtu.be/gkRymuy1-uo)
 - [run 17 test N 10 000 000 Emergent Coherence graphic](https://youtu.be/DY8HOc7T2Vw)
- - [run_18test_input _1-16](https://youtu.be/bOaTG3Dc-GA)
+ 
  MCSC – Massively Coherent Systems Computing
+
+# MCSC - Massively Coherent Systems Computing
+
+MCSC is an analog coherent system that controls chaos when errors or shocks occur.
+
+### Core Value
+MCSC does not prevent errors – it **controls chaos** when an error happens.  
+Instead of sharp collapse (blackout, system failure, full crisis), it creates **smooth load/risk redistribution** over a long period.  
+This turns a potential **catastrophe** into a **manageable minor issue** – giving critical time for human response (engineers, regulators, operators).
+
+### Key Behavior (from real tests)
+- **Sharp surge**: rapid activation to 90–100% stability/active level  
+- **Long holding**: sustains high performance for hundreds of steps  
+- **Slow decline**: gradual drop to 30–60% – never sudden zero collapse  
+
+This behavior provides **critical reaction time** – turning disasters into controlled problems that can be fixed before total failure.
+
+### Real-World Applications
+- **Power grids**: sudden transformer failure → load redistribution, no full blackout – sustained partial power for hours.  
+- **Swarm robotics**: one drone/robot fails → others compensate, swarm continues mission at 60–90% capacity.  
+- **Financial networks**: bank failure → risk spreads slowly, regulators gain time for intervention.  
+- **Neural/brain-inspired systems**: stimulus disrupts sync → partial recovery and sustained activity.  
+
+MCSC is designed for critical systems where **time for reaction** saves lives, money, and infrastructure.
+
+### Test Results (examples)
+- RCS-like Hamming weight: stable ~49–50% average  
+- Power Grid: 100% surge, recovery after shock to 87–95%  
+- Swarm Robotics: 100% coordination, partial recovery after obstacle  
+- Brain Oscillations: 100% sync, partial recovery after stimulus
+
 
 Prototype demonstrating **emergent coherence** in massive networks of coherent transistors.
 
