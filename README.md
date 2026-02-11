@@ -17,7 +17,8 @@ Click to play CMD runs (no download needed):
 - [run 2 Ising Baseline test](https://youtu.be/gkRymuy1-uo)
 - [run 17 test N 10 000 000 Emergent Coherence graphic](https://youtu.be/DY8HOc7T2Vw)
  
- MCSC – Massively Coherent Systems Computing
+ Official preprint: https://doi.org/10.5281/zenodo.18609955
+MCSC – analog coherent system that controls chaos and prevents sudden collapse in critical networks.
 
 # MCSC - Massively Coherent Systems Computing
 
