@@ -1,25 +1,5 @@
 
 
-## Videos – Watch directly (YouTube – Unlisted)
-for better quality download from video folder ! !!! 
-
-Click to play CMD runs (no download needed):
- - [run_18test_input _1-16](https://youtu.be/o9JUCD8xEOg)
-- [ run 12 test N 400 000 000 M ](https://youtu.be/iqeDBOdlS_I)  
--  [run 11 test Kuramoto baseline](https://youtu.be/RjEwmMzOObA)  
-- [run 10 test Kuramoto baseline](https://youtu.be/RB1FA--ohO8)  
-- [run 9 testGame of Life](https://youtu.be/eT3qnozqGfk)  
-- [run 8 testGame of Life-250 000 000M](https://youtu.be/NRd6IGvWJWY)  
-- [run 6 testGame of Life](https://youtu.be/3jUFFBmHFGw)  
-- [run 5 testGame of Life](https://youtu.be/9m9StUKo0Uc)  
-- [run 4 Hopfield Network test](https://youtu.be/wvNG6z6bEvg)  
-- [run 3 Ising Baseline test](https://youtu.be/Wj-7N8UThRU)  
-- [run 2 Ising Baseline test](https://youtu.be/gkRymuy1-uo)
-- [run 17 test N 10 000 000 Emergent Coherence graphic](https://youtu.be/DY8HOc7T2Vw)
- 
- Official preprint: https://doi.org/10.5281/zenodo.18609955
-MCSC – analog coherent system that controls chaos and prevents sudden collapse in critical networks.
-
 # MCSC - Massively Coherent Systems Computing
 
 MCSC is an analog coherent system that controls chaos when errors or shocks occur.
