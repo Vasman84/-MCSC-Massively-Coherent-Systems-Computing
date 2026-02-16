@@ -2,6 +2,10 @@
 
 # MCSC - Massively Coherent Systems Computing
 
+ Official preprint: https://doi.org/10.5281/zenodo.18609955
+MCSC – analog coherent system that controls chaos and prevents sudden collapse in critical networks.
+
+
 MCSC is an analog coherent system that controls chaos when errors or shocks occur.
 
 ### Core Value
