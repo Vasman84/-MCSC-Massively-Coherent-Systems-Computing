@@ -4,6 +4,8 @@
 
  Official preprint: https://doi.org/10.5281/zenodo.18609955
 MCSC – analog coherent system that controls chaos and prevents sudden collapse in critical networks.
+DOI (Version 2.0): https://doi.org/10.5281/zenodo.19022631
+Zenodo record with pandapower closed-loop tests: https://zenodo.org/records/19022631
 
 ## Videos – Watch directly (YouTube – Unlisted)
  
