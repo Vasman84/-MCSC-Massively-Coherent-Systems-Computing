@@ -32,9 +32,14 @@ It influences activation flow and resonance, resulting in:
 | Logit Variance | **↑ 35%** |
 | Layer 2 Attention | **↑ 55%** |
 
-> Detailed per-prompt metrics and visual graphs are available in the `/graphs` folder.
+>  ## 📊 Full Metrics and Responses
 
-## Videos – Watch directly (YouTube – Unlisted)
+- [Clean Model (Qwen 7B)](AI_7B_Qwen_.clean_model_metrics.md)
+- [Analog Model (Qwen 7B + MCSC)](MCSC_AI_7B_Qwen__analog_model_metrics.md)
+
+MCSC - Massively Coherent Systems Computing
+
+## Videos for the analogue – Watch directly (YouTube – Unlisted)
  
 Click to play CMD runs (no download needed):
  - [run_18test_input _1-16](https://youtu.be/o9JUCD8xEOg)
