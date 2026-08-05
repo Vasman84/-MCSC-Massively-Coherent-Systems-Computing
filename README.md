@@ -32,7 +32,7 @@ It influences activation flow and resonance, resulting in:
 | Logit Variance | **↑ 35%** |
 | Layer 2 Attention | **↑ 55%** |
 
->  ## 📊 Full Metrics and Responses
+>  ## 📊 Full Metrics 
 
 - [Clean Model (Qwen 7B)](AI_7B_Qwen_.clean_model_metrics.md)
 - [Analog Model (Qwen 7B + MCSC)](MCSC_AI_7B_Qwen__analog_model_metrics.md)
