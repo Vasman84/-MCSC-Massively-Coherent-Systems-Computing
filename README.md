@@ -23,7 +23,7 @@ It influences activation flow and resonance, resulting in:
 - **Higher logit variance** – more creative and diverse outputs  
 - **Enhanced early-layer attention** – better semantic focus and contextual understanding
 
-# 📊 Average improvements (20+ prompts)
+# 📊 Average improvements (prompts)
 
 | Metric | Improvement |
 |--------|-------------|
