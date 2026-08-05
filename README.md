@@ -8,6 +8,32 @@ MCSC – analog coherent system that controls chaos and prevents sudden collapse
 DOI (Version 2.0):
 Zenodo record with pandapower closed-loop tests: https://zenodo.org/records/19022631
 
+# MCSC-AI – Analog Coherence Layer for Language Models
+
+**MCSC-AI** integrates the analog **Massively Coherent System Computation (MCSC)** model into a **7B parameter language model**.  
+It modifies the internal dynamics of the model **without retraining** – improving coherence, stability, and output quality.
+
+# 🔬 What it does
+
+MCSC-AI adds an **analog coherence layer** to the transformer architecture.  
+It influences activation flow and resonance, resulting in:
+
+- **Lower perplexity** – more confident and decisive responses  
+- **Lower token reassignment** – more stable and consistent token selection  
+- **Higher logit variance** – more creative and diverse outputs  
+- **Enhanced early-layer attention** – better semantic focus and contextual understanding
+
+# 📊 Average improvements (20+ prompts)
+
+| Metric | Improvement |
+|--------|-------------|
+| Perplexity | **↓ 61%** |
+| Token Reassignment | **↓ 70%** |
+| Logit Variance | **↑ 35%** |
+| Layer 2 Attention | **↑ 55%** |
+
+> Detailed per-prompt metrics and visual graphs are available in the `/graphs` folder.
+
 ## Videos – Watch directly (YouTube – Unlisted)
  
 Click to play CMD runs (no download needed):
