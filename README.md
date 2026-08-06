@@ -8,6 +8,9 @@ MCSC – analog coherent system that controls chaos and prevents sudden collapse
 DOI (Version 2.0):
 Zenodo record with pandapower closed-loop tests: https://zenodo.org/records/19022631
 
+DOI (Version 3.0)
+Zenodo MCSC-AI: https://zenodo.org/records/21808737     
+
 # MCSC-AI – Analog Coherence Layer for Language Models
 
 **MCSC-AI** integrates the analog **Massively Coherent System Computation (MCSC)** model into a **7B parameter language model**.  
