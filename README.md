@@ -35,6 +35,11 @@ It influences activation flow and resonance, resulting in:
 | Logit Variance | **↑ 35%** |
 | Layer 2 Attention | **↑ 55%** |
 
+Puzzlement: ↓ to 80% (model becomes more confident and decisive)
+- Token Redirection: ↓ to 80% (more stable and consistent token selection)
+- Logit variance: ↑ significantly (greater creative variety)
+- Level 2 Attention: ↑ to 80% (increased semantic focus from early stages)
+
 >  ## 📊 Full Metrics 
 
 - [Clean Model (Qwen 7B)](AI_7B_Qwen_.clean_model_metrics.md)
