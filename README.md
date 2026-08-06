@@ -46,6 +46,20 @@ It influences activation flow and resonance, resulting in:
 - [Clean Model (Qwen 7B)](AI_7B_Qwen_.clean_model_metrics.md)
 - [Analog Model (Qwen 7B + MCSC)](MCSC_AI_7B_Qwen__analog_model_metrics.md)
 
+## 📊 Visual Comparison – Clean vs MCSC-AI
+
+### Perplexity
+![Perplexity Comparison](graphs/perplexity_comparison.png)
+
+### Token Repurposing
+![Token Repurposing Comparison](graphs/token_comparison.png)
+
+### Logit Variance
+![Logit Variance Comparison](graphs/logit_variance_comparison.png)
+
+### Layer 2 Attention
+![Attention Layer 2 Comparison](graphs/attention_comparison.png)
+
 MCSC - Massively Coherent Systems Computing
 
 ## Videos for the analogue – Watch directly (YouTube – Unlisted)
