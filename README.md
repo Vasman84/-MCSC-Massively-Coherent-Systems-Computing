@@ -40,7 +40,8 @@ It influences activation flow and resonance, resulting in:
 - Logit variance: ↑ significantly (greater creative variety)
 - Level 2 Attention: ↑ to 80% (increased semantic focus from early stages)
 
->  ## 📊 Full Metrics 
+>  ## 📊 Full Metrics
+> comparison of pure and analog model in two separate sections
 
 - [Clean Model (Qwen 7B)](AI_7B_Qwen_.clean_model_metrics.md)
 - [Analog Model (Qwen 7B + MCSC)](MCSC_AI_7B_Qwen__analog_model_metrics.md)
