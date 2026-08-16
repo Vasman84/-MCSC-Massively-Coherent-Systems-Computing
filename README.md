@@ -46,19 +46,30 @@ It influences activation flow and resonance, resulting in:
 - [Clean Model (Qwen 7B)](AI_7B_Qwen_.clean_model_metrics.md)
 - [Analog Model (Qwen 7B + MCSC)](MCSC_AI_7B_Qwen__analog_model_metrics.md)
 
-#Analog Model RK-Lazarus — Experimental Results
 
-Analog Model RK-Lazarus is a stateful analog-inspired controller integrated into
-Qwen2.5-7B-Instruct through forward hooks applied every third
-self-attention layer.
+# Analog Model MCSC RK-Lazarus — Experimental Results
 
-Configuration:
+MCSC RK-Lazarus is a stateful analog-inspired computational controller
+experimentally integrated into Qwen2.5-7B-Instruct.
 
+The controller introduces structured, state-dependent transformations
+into the model's internal representations during inference.
+
+## Experimental Configuration
+
+- Base model: Qwen2.5-7B-Instruct
+- Controller: RK-Lazarus
 - Analog units: 256
-- Strength: 0.60
-- Layers: 0, 3, 6, 9, ..., 27
-- Core logic:
-  `charge → decay → links → propagation → INTERFERE → hidden-state perturbation`
+- Controller strength: 0.60
+- Integration: selected internal transformer stages
+- Architecture: stateful analog-inspired dynamics
+
+The exact controller topology, update rules, coupling mechanism,
+and integration implementation are intentionally not disclosed
+in this repository.
+
+This repository focuses on experimental methodology, controls,
+ablation studies, and measured effects.
 
 ## 1. Zero-Control Test
 
@@ -168,9 +179,7 @@ The matched-amplitude controls indicate that the observed effect
 cannot be explained solely by injecting perturbations of the same
 magnitude.
 
-These experiments demonstrate a **computational effect**.
-They do not by themselves demonstrate consciousness, AGI, improved
-reasoning, or improved model quality.
+These results demonstrate that RK-Lazarus is not merely adding arbitrary noise to the base model. Its structured, stateful dynamics produce a measurable, reproducible, and statistically significant computational influence on the model's internal behavior. The results provide a strong experimental foundation for investigating whether this influence can be translated into improvements in reasoning, adaptability, stability, and other higher-level capabilities.
 
 ## 📊 Visual Comparison – Clean vs MCSC-AI
 
