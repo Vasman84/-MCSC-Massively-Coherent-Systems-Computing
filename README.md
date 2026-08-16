@@ -46,6 +46,132 @@ It influences activation flow and resonance, resulting in:
 - [Clean Model (Qwen 7B)](AI_7B_Qwen_.clean_model_metrics.md)
 - [Analog Model (Qwen 7B + MCSC)](MCSC_AI_7B_Qwen__analog_model_metrics.md)
 
+#Analog Model RK-Lazarus — Experimental Results
+
+Analog Model RK-Lazarus is a stateful analog-inspired controller integrated into
+Qwen2.5-7B-Instruct through forward hooks applied every third
+self-attention layer.
+
+Configuration:
+
+- Analog units: 256
+- Strength: 0.60
+- Layers: 0, 3, 6, 9, ..., 27
+- Core logic:
+  `charge → decay → links → propagation → INTERFERE → hidden-state perturbation`
+
+## 1. Zero-Control Test
+
+With `strength = 0`, CLEAN and Lazarus were effectively identical:
+
+| Metric | Result |
+|---|---:|
+| Hidden RMS Δ | 0.000000 |
+| Logit RMS Δ | 0.000000 |
+| KL divergence | 0.000000 |
+| Top-1 agreement | 100% |
+
+**Result:** The hook infrastructure itself does not measurably alter
+the model.
+
+## 2. Strength Sweep
+
+Increasing Lazarus strength produced increasing deviations from CLEAN.
+
+| Strength | Final Hidden Δ | Logit RMS Δ | KL |
+|---:|---:|---:|---:|
+| 0.00 | 0.000 | 0.000 | 0.0000 |
+| 0.10 | 0.176 | 0.069 | 0.0021 |
+| 0.20 | 0.455 | 0.123 | 0.0032 |
+| 0.40 | 0.508 | 0.219 | 0.0051 |
+| 0.60 | 0.619 | 0.354 | 0.0134 |
+| 0.80 | 0.844 | 0.486 | 0.0221 |
+| 1.00 | 1.072 | 0.595 | 0.0345 |
+
+**Result:** The effect is strength-dependent and propagates to the
+final logits.
+
+## 3. Decision Boundary Test
+
+At `strength = 0`:
+
+`0 flips / 0 crossings / KL = 0`
+
+With Lazarus enabled, robust Top-1 flips appeared:
+
+| Strength | Top-1 Flips |
+|---:|---:|
+| 0.10 | 0/30 |
+| 0.20 | 3/30 |
+| 0.40 | 4/30 |
+| 0.60 | 2/30 |
+| 0.80 | 1/30 |
+| 1.00 | 3/30 |
+
+**Result:** Lazarus can alter actual token decisions, not only hidden
+state values.
+
+## 4. Matched-Perturbation Control
+
+Perturbation RMS was matched between FULL Lazarus and the controls:
+
+| Condition | Relative RMS Error |
+|---|---:|
+| RANDOM | 0.0045% |
+| SHUFFLED | 0.0139% |
+| NO_INTERFERE | 0.0010% |
+
+Despite nearly identical perturbation amplitude:
+
+### FULL vs RANDOM
+
+- Logit RMS difference: **0.03741**
+- 95% CI: **[0.03008, 0.04473]**
+- Cohen's dz: **0.817**
+- p = **2.42 × 10⁻18**
+- RANDOM retained only **33.5% of FULL KL**
+
+### FULL vs SHUFFLED
+
+- Logit RMS p = **4.20 × 10⁻19**
+- KL p = **6.71 × 10⁻4**
+- JS p = **6.56 × 10⁻4**
+- SHUFFLED retained **48.9% of FULL KL**
+
+### FULL vs NO_INTERFERE
+
+- Logit RMS p = 0.562
+- KL p = 0.139
+- JS p = 0.158
+
+The current experiment therefore does **not** establish that
+`INTERFERE` alone is necessary for the effect.
+
+## 5. Multi-Seed Validation
+
+The matched-control experiment used:
+
+**30 prompts × 5 seeds = 150 paired observations per condition.**
+
+The FULL-vs-RANDOM and FULL-vs-SHUFFLED differences remained
+statistically significant while perturbation magnitude was matched.
+
+# Conclusion
+
+The experiments support the following claim:
+
+> **RK-Lazarus produces a reproducible, strength-dependent and
+> structure-dependent causal perturbation of Qwen2.5-7B's internal
+> computation and output probability distribution.**
+
+The matched-amplitude controls indicate that the observed effect
+cannot be explained solely by injecting perturbations of the same
+magnitude.
+
+These experiments demonstrate a **computational effect**.
+They do not by themselves demonstrate consciousness, AGI, improved
+reasoning, or improved model quality.
+
 ## 📊 Visual Comparison – Clean vs MCSC-AI
 
 ### Perplexity
