@@ -191,6 +191,325 @@ Results: Across 3,075 analog evaluations, RK-LAZARUS produced 223 Top-1 token fl
 
 Conclusion: Under the tested conditions, hierarchical RK-LAZARUS demonstrates reproducible non-zero decision-boundary crossing in Qwen2.5-7B-Instruct. The 7.252% flip rate applies specifically to preselected close decision boundaries (CLEAN margin 0.01–0.08) and should not be interpreted as the percentage of all tokens changed during normal generation.
 
+RK-LAZARUS Non-Zero Boundary Validation
+RMS-Matched Control Experiment
+Overview
+
+This experiment evaluates whether the structured RK-LAZARUS analog intervention produces measurable changes in the token decision boundaries of a transformer language model, and whether those changes differ from perturbations with the same effective magnitude but different structure.
+
+The host model used in this experiment was:
+
+Qwen/Qwen2.5-7B-Instruct
+
+RK-LAZARUS was compared against two RMS-matched control conditions:
+
+RANDOM — random perturbation
+STATIC — fixed/static perturbation
+
+The purpose of the controls was to distinguish the effect of perturbation magnitude from the effect of perturbation structure.
+
+Experimental Configuration
+
+Host model: Qwen/Qwen2.5-7B-Instruct
+
+Analog units per layer: 256
+
+Selected decision boundaries: 123
+
+Clean margin interval: 0.01–0.08
+
+MAX_DELTA_SCALE: 0.09
+
+Influence values:
+
+0.015
+0.03
+0.06
+0.12
+0.24
+
+Analog seeds:
+
+11
+23
+42
+77
+101
+
+Methods:
+
+RK-LAZARUS
+RANDOM
+STATIC
+
+Total evaluations per method:
+
+3,075
+
+The experiment therefore evaluates each perturbation method across multiple decision boundaries, influence levels, and analog seeds.
+
+Main Results
+Method	Evaluations	Top-1 Flips	Flip Rate	Direct Pair Reversals	Reversal Rate
+RK-LAZARUS	3,075	223	7.252%	48	1.561%
+RANDOM	3,075	211	6.862%	34	1.106%
+STATIC	3,075	209	6.797%	39	1.268%
+
+RK-LAZARUS produced the highest overall Top-1 flip rate and the highest direct clean-pair reversal rate among the three tested conditions.
+
+RMS-Matched Perturbation Control
+
+Mean effective delta RMS:
+
+RK-LAZARUS:
+
+0.00013976380310
+
+RANDOM:
+
+0.00013976380324
+
+STATIC:
+
+0.00013976380368
+
+The mean effective perturbation magnitude is effectively identical across all three conditions.
+
+This is an important control result.
+
+The difference in observed token-boundary behavior therefore cannot be explained simply by RK-LAZARUS applying a larger average perturbation.
+
+Instead, the experiment provides evidence that the structure and direction of the perturbation contribute to the resulting decision-boundary changes.
+
+Flip Overlap
+
+Lazarus-only flips:
+
+88
+
+Flips shared by all three methods:
+
+67
+
+The existence of 88 Lazarus-only flip cases indicates that a subset of the boundary changes produced by RK-LAZARUS was not reproduced by either RMS-matched RANDOM or STATIC perturbations.
+
+This provides additional evidence that the structured RK-LAZARUS intervention is not completely equivalent to generic perturbation energy.
+
+Influence Sweep
+Influence = 0.015
+
+RK-LAZARUS: 48 flips — 7.805%
+
+RANDOM: 42 flips — 6.829%
+
+STATIC: 44 flips — 7.154%
+
+Influence = 0.03
+
+RK-LAZARUS: 45 flips — 7.317%
+
+RANDOM: 33 flips — 5.366%
+
+STATIC: 42 flips — 6.829%
+
+Influence = 0.06
+
+RK-LAZARUS: 40 flips — 6.504%
+
+RANDOM: 47 flips — 7.642%
+
+STATIC: 42 flips — 6.829%
+
+Influence = 0.12
+
+RK-LAZARUS: 47 flips — 7.642%
+
+RANDOM: 49 flips — 7.967%
+
+STATIC: 41 flips — 6.667%
+
+Influence = 0.24
+
+RK-LAZARUS: 43 flips — 6.992%
+
+RANDOM: 40 flips — 6.504%
+
+STATIC: 40 flips — 6.504%
+
+Influence Calibration Observation
+
+The observed effect is not monotonic with intervention strength.
+
+Increasing the analog influence does not automatically increase the probability of changing the Top-1 token.
+
+This suggests that RK-LAZARUS should not be calibrated simply by maximizing perturbation strength.
+
+Instead, the results support the concept of:
+
+RK-LAZARUS Core + Host Adapter + Model-Specific Calibration Profile
+
+Different host models — and potentially different layers within the same model — may require different operating regions.
+
+Layer-Level Observation
+
+Individual experimental records show that the effective perturbation is not distributed uniformly across transformer depth.
+
+Later transformer layers can exhibit substantially larger effective RMS values than earlier layers.
+
+This motivates a dedicated layer-ablation experiment to determine how much of the observed decision-boundary effect originates from late-layer intervention.
+
+Potential future comparisons include:
+
+Early layers only
+
+Middle layers only
+
+Late layers only
+
+Single-layer intervention
+
+Full hierarchical intervention
+
+Experimental Conclusion
+
+The experiment demonstrates that RK-LAZARUS produces a measurable causal modification of token decision boundaries in Qwen2.5-7B-Instruct under the tested conditions.
+
+Across 3,075 evaluations per method:
+
+RK-LAZARUS
+
+223 Top-1 flips
+7.252% flip rate
+48 direct pair reversals
+1.561% reversal rate
+
+RANDOM
+
+211 Top-1 flips
+6.862% flip rate
+34 direct pair reversals
+1.106% reversal rate
+
+STATIC
+
+209 Top-1 flips
+6.797% flip rate
+39 direct pair reversals
+1.268% reversal rate
+
+Because the effective perturbation RMS was essentially identical across all three experimental conditions, the observed differences cannot be attributed solely to average perturbation magnitude.
+
+The results therefore provide evidence that the structured dynamics of the RK-LAZARUS intervention affect host-model decision boundaries differently from RMS-matched random and static controls.
+
+What This Experiment Demonstrates
+
+The experiment provides evidence for:
+
+Measurable hidden-state intervention
+
+→ measurable logit/probability modification
+
+→ Top-1 decision-boundary changes
+
+→ non-zero token flips
+
+→ effects distinguishable from RMS-matched controls
+
+This establishes a mechanistic basis for further RK-LAZARUS evaluation.
+
+What This Experiment Does NOT Yet Demonstrate
+
+This experiment does not establish that RK-LAZARUS improves:
+
+intelligence,
+
+reasoning accuracy,
+
+factual accuracy,
+
+answer quality,
+
+task performance,
+
+or general model capability.
+
+A change in a token decision boundary is not automatically an improvement.
+
+Those claims require separate behavioral evaluation.
+
+Next Validation Stage
+
+The next experiment is a controlled behavioral comparison:
+
+CLEAN Qwen2.5-7B
+
+versus
+
+Qwen2.5-7B + RK-LAZARUS
+
+Both models should receive identical prompts under identical decoding conditions.
+
+The resulting answers can then be evaluated for:
+
+reasoning correctness,
+
+factual accuracy,
+
+instruction following,
+
+consistency,
+
+coherence,
+
+specificity,
+
+and task success.
+
+A second validation stage should repeat the RK-LAZARUS integration on another compatible host model, such as DeepSeek-R1-Distill-Qwen-7B.
+
+Reproducing measurable effects across multiple host models would provide evidence for the broader hypothesis that RK-LAZARUS can operate as a portable, calibratable analog intervention layer rather than a model-specific modification.
+
+Current Evidence Chain
+
+RK-LAZARUS Analog Dynamics
+
+↓
+
+Transformer Hidden-State Intervention
+
+↓
+
+Logit Distribution Modification
+
+↓
+
+Decision-Boundary Modification
+
+↓
+
+Measured Top-1 Flips
+
+↓
+
+RMS-Matched Control Difference
+
+↓
+
+Behavioral Validation — NEXT
+
+↓
+
+Cross-Model Portability — NEXT
+
+Status
+
+Mechanistic boundary effect: demonstrated under the tested configuration.
+
+RMS-matched control comparison: completed.
+
+Behavioral improvement: not yet established.
+
+Cross-model portability: not yet established.
+
 ## 📊 Visual Comparison – Clean vs MCSC-AI
 
 ### Perplexity
