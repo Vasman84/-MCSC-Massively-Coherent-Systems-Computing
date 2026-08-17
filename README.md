@@ -181,6 +181,16 @@ magnitude.
 
 These results demonstrate that RK-Lazarus is not merely adding arbitrary noise to the base model. Its structured, stateful dynamics produce a measurable, reproducible, and statistically significant computational influence on the model's internal behavior. The results provide a strong experimental foundation for investigating whether this influence can be translated into improvements in reasoning, adaptability, stability, and other higher-level capabilities.
 
+MCSC-AI-RK-LAZARUS — Non-Zero Decision Boundary Validation
+
+A controlled validation experiment was performed on Qwen2.5-7B-Instruct to determine whether the hierarchical RK-LAZARUS analog intervention can alter actual next-token decisions rather than merely perturb token probabilities.
+
+Test configuration: 256 analog units per layer, 18 prompts, 123 strictly non-zero decision boundaries, 5 analog seeds, and 5 influence levels (0.015–0.240).
+
+Results: Across 3,075 analog evaluations, RK-LAZARUS produced 223 Top-1 token flips (7.252%), including 48 direct CLEAN Top-1/Top-2 reversals. 33 of 123 boundaries (26.83%) exhibited at least one Top-1 change. The effect was observed across all five tested seeds.
+
+Conclusion: Under the tested conditions, hierarchical RK-LAZARUS demonstrates reproducible non-zero decision-boundary crossing in Qwen2.5-7B-Instruct. The 7.252% flip rate applies specifically to preselected close decision boundaries (CLEAN margin 0.01–0.08) and should not be interpreted as the percentage of all tokens changed during normal generation.
+
 ## 📊 Visual Comparison – Clean vs MCSC-AI
 
 ### Perplexity
