@@ -21,24 +21,7 @@ It modifies the internal dynamics of the model **without retraining** – improv
 MCSC-AI adds an **analog coherence layer** to the transformer architecture.  
 It influences activation flow and resonance, resulting in:
 
-- **Lower perplexity** – more confident and decisive responses  
-- **Lower token reassignment** – more stable and consistent token selection  
-- **Higher logit variance** – more creative and diverse outputs  
-- **Enhanced early-layer attention** – better semantic focus and contextual understanding
 
-# 📊 Average improvements (prompts)
-
-| Metric | Improvement |
-|--------|-------------|
-| Perplexity | **↓ 61%** |
-| Token Reassignment | **↓ 70%** |
-| Logit Variance | **↑ 35%** |
-| Layer 2 Attention | **↑ 55%** |
-
-- Puzzlement: ↓ to 80% (model becomes more confident and decisive)
-- Token Redirection: ↓ to 80% (more stable and consistent token selection)
-- Logit variance: ↑ significantly (greater creative variety)
-- Level 2 Attention: ↑ to 80% (increased semantic focus from early stages)
 
 >  ## 📊 Full Metrics
 > comparison of Clean Model and Analog Model(MCSC-AI) in two separate sections - with identical questions (prompts)!
